@@ -1,0 +1,78 @@
+form{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+    .formulario{
+        padding: 50px 30px 50px 30px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        text-align: center;
+        width: 340px;
+        margin-bottom: 80px;
+
+        h2{
+            color: $color-h-text;
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+
+        .input-group{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+
+            label{
+                color: $color-h-text;
+                font-size: 15px;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+
+            input{
+                padding: 10px 50px;
+                margin-bottom: 20px;
+                border: 2px solid #eceded;
+                border-radius: 20px;
+
+                }
+                
+            
+
+            .form-text{
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+
+                a{
+                    color: $color-p-text;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline;
+                        text-decoration-color: $color-btn-hover;
+                    }
+                }
+            }
+
+            .login{
+                font-size: 16px;
+                background-color: $color-btn;
+                border-radius: 30px !important;
+                padding: 10px 55px;
+                color: $color-principal;
+
+                &:hover{
+                    background-color: $color-btn-hover;
+                    color: $color-principal;
+                }
+            }
+        }
+    }
+    
+}

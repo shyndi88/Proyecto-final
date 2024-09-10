@@ -1,0 +1,245 @@
+.main-nosotros{
+    padding: 30px;
+    background-color: $color-principal;
+}
+.main-info{
+        
+    display: block;
+    align-items: center;
+    background-color: $color-principal;
+    margin-bottom: 30px;
+
+
+    h2{
+        padding-top: 25px;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: start;
+        color: $color-h-text;
+        letter-spacing: 1px;
+    }
+
+    p{
+        padding-top: 10px;
+        font-size: 16px;
+        text-align: start;
+        font-weight: 400;
+        color: $color-p-text;
+    
+        span {
+            font-size: 0;
+            display: block;
+        }
+    }
+}
+.main-historyUno{
+    display: flex;
+    flex-direction: column-reverse;
+
+    img{
+        width: 100%;
+        border-radius: 16px;
+        margin-top: 10px;
+    }
+    .historyUno{
+
+    h4{
+        text-align: center;
+        margin-top: 50px;
+        font-weight: 400;
+        color: $color-h-text;
+    }    
+    p {
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 16px;
+        color: $color-p-text;
+    }
+} 
+}
+.main-historyDos{
+
+    img{
+        width: 100%;
+        border-radius: 16px;
+        margin-top: 20px;
+    }
+    .historyDos{
+
+        h4{
+            text-align: center;
+            margin-top: 30px;
+            font-weight: 400;
+            
+        }    
+        p {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 300;
+            font-size: 16px;
+            
+        }
+    }
+}
+/* version tablet */
+
+@include tablet {
+    .main-info{
+        text-align: center;
+        margin-top: 25px;
+
+        h2{
+            font-size: 30px;
+            font-weight: 400;
+            text-align: center;
+        }
+    
+        p{
+            margin-top: 10px;
+            font-size: 18px;
+            text-align: center;
+            font-weight: 400;
+
+            span {
+                font-size: 0;
+                display: none;
+            }
+        }
+    }
+    .main-historyUno{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            margin: 90px 20px 10px 0px;
+        }
+        
+        .historyUno{
+        h4{ 
+            margin-top: 120px;
+            margin-left: 30px;
+            text-align: start;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    
+        p{
+            font-size: 16px;
+            text-align: start;
+            margin: 10px 70px 10px 30px;
+        }
+    }
+    }
+
+    .main-historyDos{
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+
+        img{
+            width: 90%;
+            border-radius: 16px;
+            margin: 130px 40px 80px 20px;
+        }
+        
+        .historyDos{
+            h4{
+            text-align: left;
+            font-weight: 500;
+            font-size: 20px;
+            margin: 150px 50px 30px 60px;
+            }
+    
+            p{
+            font-size: 16px;
+            text-align: left;
+            margin: 10px 40px 20px 60px;
+            }
+        }
+    }
+
+}
+//* version desktop *//
+
+@include desktop{
+    .main-nosotros{
+        text-align: center;
+        margin: 20px;
+    }
+
+    .main-info{
+        text-align: center;
+        padding-top: 15px;
+        margin-bottom: 50px;
+    }
+    .main-info h2{
+        font-size: 40px;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .main-info p{
+        font-size: 28px;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    .main-historyUno{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+
+        img{
+            width: 90%;
+            height: auto;
+            border-radius: 16px;
+            margin: 80px 30px 40px 20px;
+        }
+        
+        .historyUno{
+            h4{ 
+                text-align: center;
+                margin: 150px 30px 30px 40px;
+                font-weight: 400;
+            }
+    
+            p{
+                font-size: 20px;
+                text-align: center;
+                margin: 30px 50px 20px 50px;
+        
+            }
+        }
+    }
+
+    .main-historyDos{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+
+        img{
+            width: 90%;
+            border-radius: 16px;
+            margin: 130px 30px 80px 20px;
+        }
+        
+        .historyDos{
+        h4{ 
+            margin: 250px 40px 10px 40px;
+            text-align: center;
+            font-weight: 400;
+        }
+    
+        p{
+            font-size: 20px;
+            text-align: center;
+            margin: 10px 20px 10px 50px;
+            padding: 20px 40px;
+        }
+    }
+    }
+}
+

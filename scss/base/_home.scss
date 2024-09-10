@@ -1,0 +1,212 @@
+.nav-link {
+        transition: all .42s;
+        color: $color-btn-hover;
+    
+
+    &:hover{
+        text-decoration: underline;
+        text-decoration-color: $color-btn;
+    }
+    }
+
+section{
+    padding: 5% 5%;
+}
+
+.main-home{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-image: radial-gradient(circle at 72.41% 1.94%, #ffffff 0, #fffbfd 25%, #eeeeee 50%, #d7e1de 75%, #c4d4ce 100%);
+    align-items: center;
+    
+}
+
+.main-text{ 
+    
+    h1{
+    color: $color-h-text;
+    font-size: 65px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    }
+
+    p{
+        color: $color-p-text;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+}
+
+.main-btn{
+    display: inline-block;
+    margin-top: 20px;
+    color: $color-principal;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 30px;
+    padding: 10px 55px;
+    background-color: $color-btn;
+    text-decoration: none;
+
+    &:hover{
+        background-color: $color-btn-hover;
+        color: $color-principal;
+    }
+
+.main-btn i{
+    vertical-align: middle;
+}
+}
+
+//version tablet 
+
+@include tablet {
+    .main-home{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/banner.png);
+        background-position: center;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .main-text h1{
+        color: $color-h-text;
+        font-size: 65px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        text-align: left;
+
+        p{
+            color: $color-p-text;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 300;
+            text-align: left;
+        }
+    }
+    
+    .main-btn{
+        display: inline-block;
+        margin-top: 20px;
+        color: $color-text-btn;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: capitalize;
+        border-radius: 30px;
+        background-color: $color-btn;
+
+        &:hover{
+            background-color: $color-btn-hover;
+            color: $color-principal;
+        }
+
+        i{
+            vertical-align: middle;
+        }
+        
+    }
+}
+
+footer{
+    width: auto;
+    background-color: $color-secundario;
+
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 2rem;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+
+    .first-info img{
+        margin-bottom: 10px;
+    }
+
+    .social-icon i{
+        color: $color-h-text;
+        margin-right: 10px;
+        font-size: 20px;
+        transition: all .42s;
+
+        &:hover{
+            transform: scale(1.3);
+        }
+    }
+
+        h4{
+        color: $color-h-text;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+        p{
+        color: $color-p-text;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: all .42s;
+
+        &:hover{
+            color: $color-btn;
+        }
+    }
+    .four-info iframe{
+        width: 100px;
+        height: 100px;
+    }
+
+}    
+
+.end-txt{
+    background-color: $color-h-text;
+    text-align: center;
+    padding: 5px;
+
+    p{
+        color: $color-principal;
+        text-transform: capitalize;
+        font-size: 100%;
+        margin-top: 5px;
+    }
+}
+}
+
+@include desktop {
+    
+    .main-home{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/banner.png);
+        background-position: center;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .main-text h1{
+        font-size: 65px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        text-align: left;
+
+        p{
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 300;
+            text-align: left;
+        }
+}
+}
